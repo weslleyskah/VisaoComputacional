@@ -101,7 +101,7 @@ if __name__ == "__main__":
                     different[color2].add((x_medio2, y_medio2))
 
     # tirando as cores similares da lista de cores diferentes
-    keys_to_remove = []
+    keys_to_remove = set()
     for sim_color in similar_colors_used:
         for diff_color in different:
             dist = np.sqrt(
